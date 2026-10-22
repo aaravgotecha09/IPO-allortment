@@ -1,0 +1,18 @@
+{
+  "name": "ipo-allotment-backend",
+  "version": "1.0.0",
+  "description": "REST API that drives the C IPO share allotment engine (ipo.c)",
+  "main": "server.js",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build:c": "mkdir -p bin && gcc -O2 -Wall -o bin/ipo c/ipo.c c/unbuf.c",
+    "start": "node server.js",
+    "dev": "npm run build:c && node server.js",
+    "test": "npm run build:c && node --test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
