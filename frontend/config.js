@@ -2,5 +2,5 @@
 //   API_BASE: "https://ipo-allotment-api.onrender.com"
 // On localhost the app automatically uses http://localhost:10000 instead.
 window.APP_CONFIG = {
-  API_BASE: "https://YOUR-RENDER-SERVICE.onrender.com"
+  API_BASE: "https://ipo-allortment.onrender.com"
 };
